@@ -10,82 +10,123 @@
 </head>
 
 <body>
-  <section class="hero is-info is-large">
-    <div class="hero-head">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <a class="navbar-item">
-              <img src="https://bulma.io/assets/images/bulma-type-white.png" alt="Logo" />
-            </a>
-            <span class="navbar-burger" data-target="navbarMenuHeroB">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div id="navbarMenuHeroB" class="navbar-menu">
-            <div class="navbar-end">
-              <a class="navbar-item is-active"> Home </a>
-              <a class="navbar-item"> Examples </a>
-              <a class="navbar-item"> Documentation </a>
-              <span class="navbar-item">
-                <a class="button is-info is-inverted">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span>Download</span>
-                </a>
+  <header>
+    <section class="hero is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <header class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img class="logo-image" src="/assets/img/logo.png" alt="Logo" />
+              </a>
+              <span class="navbar-burger" data-target="navbarMenuHeroC">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
               </span>
             </div>
+            <div id="navbarMenuHeroC" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item" href="index.html"> Home </a>
+                <a class="navbar-item is-active" href="#dogs.html"> Our Dogs </a>
+                <a class="navbar-item" href="litters.html"> Current Litters </a>
+                <a class="navbar-item" href="breeds.html"> Next Breeds </a>
+                <a class="navbar-item" href="about-us.html"> About us </a>
+                <a class="navbar-item" href="info.html"> About the breed </a>
+                <a class="navbar-item" href="gallery.html"> Gallery </a>
+                <a class="navbar-item" href="contact.html"> Contact </a>
+                <a class="navbar-item" href="blog.html"> Blog </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </nav>
-    </div>
-
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <p class="title">Title</p>
-        <p class="subtitle">Subtitle</p>
+        </header>
       </div>
-    </div>
 
-    <div class="hero-foot">
-      <nav class="tabs is-boxed is-fullwidth">
-        <div class="container">
-          <ul>
-            <li class="is-active">
-              <a>Overview</a>
-            </li>
-            <li>
-              <a>Modifiers</a>
-            </li>
-            <li>
-              <a>Grid</a>
-            </li>
-            <li>
-              <a>Elements</a>
-            </li>
-            <li>
-              <a>Components</a>
-            </li>
-            <li>
-              <a>Layout</a>
-            </li>
-          </ul>
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body hero-image">
+        <div class="container has-text-centered">
+          <p class="title title-hero-dogs" style="font-size: 4em;">Our Dogs</p>
+          <!-- <p class="subtitle subtitle-hero-dogs" style="font-size: 1.3em;">Breeding Legends. Building Legacy.</p> -->
         </div>
-      </nav>
-    </div>
-  </section>
-  <section class="section is-medium">
-    <h2 class="title">Our Males Dogs</h2>
-    <h3 class="subtitle">
-      A simple container to divide your page into <strong>sections</strong>, like
-      the one you're currently reading.
-    </h3>
-  </section>
-
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="section is-medium">
+      <h2 class="title title-dogs">Our Males</h2>
+      <div class="text-parent">
+        <h3 class="subtitle subtitle-dogs">
+          <strong>- KUBA -</strong> from Bendo Bullys Germany
+        </h3>
+        <div class="text-child">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ad obcaecati amet quod molestias laboriosam
+            facere beatae, tempore delectus magni dolorum autem sed libero, ea est sint illo incidunt officiis.</p>
+          <a href="/assets/img/logo-black.png" download="documents">Click for more</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="/assets/img/kuba/DSC00070.jpg">
+          <img src="/assets/img/kuba/DSC00070.jpg">
+          <img src="/assets/img/kuba/DSC00070.jpg">
+        </div>
+        <div class="column">
+          <img src="/assets/img/kuba/DSC00052.jpg">
+          <img src="/assets/img/kuba/DSC00052.jpg">
+          <img src="/assets/img/kuba/DSC00052.jpg">
+        </div>
+        <div class="column">
+          <img src="/assets/img/kuba/DSC00070.jpg">
+          <img src="/assets/img/kuba/DSC00070.jpg">
+          <img src="/assets/img/kuba/DSC00070.jpg">
+        </div>
+        <div class="column">
+          <img src="/assets/img/kuba/DSC00052.jpg">
+          <img src="/assets/img/kuba/DSC00052.jpg">
+          <img src="/assets/img/kuba/DSC00052.jpg">
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="section is-medium">
+      <h2 class="title title-dogs">Our Females</h2>
+      <section class="text-parent">
+        <h3 class="subtitle subtitle-dogs">
+          <strong>- HERA -</strong> from Giant Bully Pitbulls
+        </h3>
+        <div class="text-child">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ad obcaecati amet quod molestias laboriosam
+            facere beatae, tempore delectus magni dolorum autem sed libero, ea est sint illo incidunt officiis.</p>
+          <a href="/assets/img/logo-black.png" download="documents">Click for more</a>
+        </div>
+      </section>
+      <div class="row">
+        <div class="column">
+          <img src="/assets/img/hera/DSC00112.jpg">
+          <img src="/assets/img/hera/DSC00112.jpg">
+          <img src="/assets/img/hera/DSC00112.jpg">
+        </div>
+        <div class="column">
+          <img src="/assets/img/hera/DSC00158.jpg">
+          <img src="/assets/img/hera/DSC00158.jpg">
+          <img src="/assets/img/hera/DSC00158.jpg">
+        </div>
+        <div class="column">
+          <img src="/assets/img/hera/DSC00112.jpg">
+          <img src="/assets/img/hera/DSC00112.jpg">
+          <img src="/assets/img/hera/DSC00112.jpg">
+        </div>
+        <div class="column">
+          <img src="/assets/img/hera/DSC00158.jpg">
+          <img src="/assets/img/hera/DSC00158.jpg">
+          <img src="/assets/img/hera/DSC00158.jpg">
+        </div>
+      </div>
+    </section>
+    <hr>
+  </main>
 </body>
 
 </html>

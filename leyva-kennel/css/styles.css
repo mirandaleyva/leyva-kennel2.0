@@ -1,29 +1,108 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
 
-
-.hero-image {
-  background-image: url('/assets/img/beispiel.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-   /* Capa negra encima de la imagen */
-  background-color: rgba(0, 0, 0, 0.5); 
-  background-blend-mode: darken; /* Mezcla negro con la imagen */
-  position: relative;
-  width: 100%;
-  height: 100%;
+body{
+  background-color: black;
 }
 
-.title {
+.logo-img {
+  position: relative;
+  margin-left: 10%;
+  width: 150%;
+}
+
+.title-index {
+  margin-right: 15%;
   position: relative;
   z-index: 1;
   color: white;
-  font-size: 3rem;
-  text-align: center;
+  font-size: 5rem;
+  text-align: right;
+}
+
+.subtitle-index {
+  margin-right: 20%;
+  text-align: right;
 }
 
 .hero-contact {
   margin-top: 10%;
   margin-right: 12.5%;
   margin-bottom: 10%;
+}
+
+.iti{
+  width: 100%;
+}
+
+.iti__country-list {
+    max-height: 200px; /* puedes ajustar esto */
+    overflow-y: auto;
+  }
+
+.iti__flag {
+  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/img/flags.png");
+  background-repeat: no-repeat;
+  background-size: 5632px 15px;
+}
+
+.navbar-menu {
+  text-align: center;
+  position: sticky;
+}
+
+.title-dogs {
+  background-color: crimson;
+  border: thick solid white;
+  text-align: center;
+  padding: 5%;
+}
+ 
+.text-parent {
+  padding: 10% 0 5% 0;
+  /* background-color: mediumvioletred; */
+  position: relative;
+  /* z-index: -3; */
+}
+
+.text-child {
+  /* background-color: mediumorchid; */
+  position: relative;
+  padding-top: -50%;
+  left: 0%;
+  /* z-index: 2; */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
