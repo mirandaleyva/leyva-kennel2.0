@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current Litters</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/litters.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="/assets/img/logo-w.svg" alt="logo-white">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dogs.html">Our Dogs</a></li>
+        <li><a href="#">Current Litters</a></li>
+        <li><a href="breeds.html">Next Breeds</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="info.html">About the Breed</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="contact.html"><button>Contact</button></a>
+
+    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+    <div class="overlay" id="mobile-menu">
+      <a onclick="closeNav()" href="" class="close">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="dogs.html">Our Dogs</a>
+        <a href="litters.html">Current Litters</a>
+        <a href="breeds.html">Next Breeds</a>
+        <a href="about-us.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="info.html">About the Breed</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <img class="hero-image" src="/assets/img/litters/litter-hero.jpg" alt="">
+      <!-- <div class="container has-text-centered"> -->
+      <h1 class="hero-title">Our Dogs</h1>
+      <!-- </div> -->
+    </div>
+  </section>
+
+  <main>
+    <section>
+      <section class="section is-large">
+        <div class="row-parents">
+          <div class="column-parents">
+            <div class="texto-litters">
+              <h1 class="title title-litters"><u>HERA X KUBA</u></h1>
+              <h2 class="subtitle subtitle-litters" style="margin-top: 10%; margin-bottom: 10%;">
+                A simple container to divide your page into <strong>sections</strong>, like
+                the one you're currently reading.
+              </h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt est ipsa, itaque maiores id non,
+                nostrum perferendis dicta possimus quam mollitia! Aliquid, cumque pariatur. Provident dignissimos
+                voluptatum nemo assumenda.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt est ipsa, itaque maiores id non,
+                nostrum perferendis dicta possimus quam mollitia! Aliquid, cumque pariatur. Provident dignissimos
+                voluptatum nemo assumenda.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt est ipsa, itaque maiores id non,
+                nostrum perferendis dicta possimus quam mollitia! Aliquid, cumque pariatur. Provident dignissimos
+                voluptatum nemo assumenda.</p>
+            </div>
+          </div>
+          <div class="column-parents">
+            <img id="image-mother" src="/assets/img/hera/DSC00112.jpg" alt="hera">
+            <img id="image-father" src="/assets/img/kuba/DSC00052.jpg" alt="">
+          </div>
+        </div>
+        <div class="images-litter">
+          <div class="row">
+            <div class="column">
+              <img id="image-border" src="/assets/img/kuba/DSC00070.jpg">
+              <img id="image-border" src="/assets/img/kuba/DSC00070.jpg">
+            </div>
+            <div class="column">
+              <img id="image-border" src="/assets/img/kuba/DSC00052.jpg">
+              <img id="image-border" src="/assets/img/kuba/DSC00052.jpg">
+            </div>
+            <div class="column">
+              <img id="image-border" src="/assets/img/kuba/DSC00070.jpg">
+              <img id="image-border" src="/assets/img/kuba/DSC00070.jpg">
+            </div>
+            <div class="column">
+              <img id="image-border" src="/assets/img/kuba/DSC00052.jpg">
+              <img id="image-border" src="/assets/img/kuba/DSC00052.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="litters-pick">
+          <h2 class="subtitle is-size-3" style="font-weight: 700;">
+            <u><br>Make your choice</u>
+          </h2>
+          <div class="row-litter">
+            <div class="column-litter">1. Pick <button id="reserve">Reserve</button></div>
+            <div class="column-litter-separation"></div>
+            <div class="column-litter">1. Pick<button id="reserve">Reserve</button></div>
+          </div>
+          <div class="row-litter">
+            <div class="column-litter">2. Pick<button id="reserve">Reserve</button></div>
+            <div class="column-litter-separation"></div>
+            <div class="column-litter">2. Pick<button id="reserve">Reserve</button></div>
+          </div>
+          <div class="row-litter">
+            <div class="column-litter">3. Pick<button id="reserve">Reserve</button></div>
+            <div class="column-litter-separation"></div>
+            <div class="column-litter">3. Pick<button id="reserve">Reserve</button></div>
+          </div>
+          <div class="row-litter">
+            <div class="column-litter">4. Pick<button id="reserve">Reserve</button></div>
+            <div class="column-litter-separation"></div>
+            <div class="column-litter">4. Pick<button id="reserve">Reserve</button></div>
+          </div>
+        </div>
+        <hr>
+      </section>
+    </section>
+  </main>
+</body>
+
+</html>

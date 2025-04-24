@@ -1,0 +1,117 @@
+.hero{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+
+.hero .hero-title{
+  color: hsl(221deg, 14%, 93%);
+  font-size: 5rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.hero .hero-image{
+  display: flex;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 4px 4px !important;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.row-litter {
+  display: flex;
+}
+
+.column-litter {
+  border-bottom: medium solid white;
+  flex: 50%;
+  margin-bottom: 2%;
+}
+.column-litter-separation {
+  flex: 10%;
+}
+
+.row-parents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-parents {
+  flex: 1 1 100%;
+  padding: 10px;
+}
+
+#image-mother {
+  border: thick solid white;
+  float: left;
+  max-height: 450px;
+  max-width: auto;
+}
+
+#image-father { 
+  border: thick solid white;
+  float: right;
+  max-height: 450px;
+  margin-bottom: 10%;
+}
+
+#reserve {
+  color: green;
+  background-color: white;
+  margin-left: 70%;
+  border: medium solid white;
+}
+
+#image-border {
+  border: thick solid white;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column,
+  .column-parents,
+  .column-litter,
+  #image-mother,
+  #image-father {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  .column-parents,
+  .column-litter,
+  #image-mother,
+  #image-father
+   {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .column-parents {
+    flex: 1 1 50%; /* 50% del ancho = dos columnas */
+  }
+}
